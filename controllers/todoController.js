@@ -9,7 +9,7 @@ module.exports = function(app){
 	  res.render("todo",{todos:data});
 	});
 
-	app.post("/todo",urlencodedParser,fuction(req,res){
+	app.post("/todo",urlencodedParser,function(req,res){
 		data.push(req.body);
 		res.json(data);
 	});
