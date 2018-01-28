@@ -1,7 +1,18 @@
 body{
-    background: #0d1521;
+    background: linear-gradient(to bottom left, navy, cyan );
     font-family: tahoma;
     color: #989898;
+    transition: 0.8s;
+}
+
+p.title{
+  font-size: 50px;
+  align: center;
+  color:white;
+  padding: 15px 10px 15px 40px;
+  font-family: impact;
+  letter-spacing: 4px;
+  word-spacing: 4px;
 }
 
 #todo-table{
@@ -11,6 +22,7 @@ body{
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
+    top:-50px;
 }
 
 #todo-table form:after{
@@ -23,7 +35,7 @@ body{
 input[type="text"]{
     width: 70%;
     padding: 20px;
-    background:#181c22;
+    background:white;
     border: 0;
     float: left;
     font-size: 20px;
@@ -40,6 +52,12 @@ button{
     color: #fff;
     cursor: pointer;
     font-size: 20px;
+    transition:.7s;
+}
+
+button:hover{
+  background-color: grey;
+  transition: .7s;
 }
 
 ul{
@@ -56,11 +74,15 @@ li{
     font-size: 20px;
     cursor: pointer;
     letter-spacing: 1px;
+    transition: .7s;
+    background-color: #23282e;
+    border-color: blue;
 }
 
 li:hover{
-    text-decoration: line-through;
-    background: rgba(0,0,0,0.2);
+    color:white;
+    background-color: grey;
+    transition: .5s;
 }
 
 h1{

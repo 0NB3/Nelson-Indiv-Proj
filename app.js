@@ -9,5 +9,5 @@ app.set("view engine", "ejs");
 app.use(express.static("./public"))
 
 //listen to port
-app.listen(3000);
-console.log("You are listening to port 3000");
+app.listen(5000);
+console.log("You are listening to port 5000");
