@@ -1,27 +1,29 @@
 <html>
   <head>
-      <title>Todo List</title>
+      <title>Secret Nikki</title>
       <script src="jQuery3.2.1.js"></script>
 
       <link href="/assets/styles.css" rel="stylesheet" type="text/css" />
   </head>
 
     <body>
-      <p class="title">Secret Nikki</p>
+      <div class="nav">
+        <p class="title">Secret Nikki</p>
+
+      </div>
+
 
       <div id="todo-table">
-        <form method="post">
-          <input type="text" name="item" placeholder="New Entry" required />
+          <form method="post">
+            <input type="text" type ="submit" name="item" placeholder="New Entry" required />
 
-          <button type="submit">Add Entry</button>
-        </form>
+            <button type="submit">Add</button>
+          </form>
 
         <ul>
           <% for(var i=0; i < todos.length; i++){ %>
             <a href="/delete/<%= todos[i].id %>"><li><%= todos[i].item %></li></a>
           <% } %>
         </ul>
-
-      </div>
     </body>
 </html>
